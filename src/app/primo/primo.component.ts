@@ -24,8 +24,8 @@ export class PrimoComponent implements OnInit {
 
   changeStatus(){
 
-    if(this.flag) { this.flag=false; this.modifyElement="c2";}
-    else { this.flag=true; this.modifyElement="c1"; }
+    if(this.flag) { this.flag=false; this.modifyElement="c1";}
+    else { this.flag=true; this.modifyElement="c2"; }
   }
 
   //messaggio dalla funzione di output del figlio
