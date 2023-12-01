@@ -1,0 +1,21 @@
+<div class="container">
+
+
+    <H1 [class]=" modifyElement ">
+        testo</H1>
+
+    <H1 [class.c1]="modifyElement==='c1' " [class.c2]="modifyElement==='c2' ">ngClass testo</H1>
+
+    <div *ngIf="modifyElement=='c1 ' ">
+        Campo dinamico, appare e scompare
+    </div>
+
+    <button class="btn btn-primary " (click)=" changeStatus() ">Change status</button>
+    <hello-user name="Freddy " (msgEvent)="msgReceive($event) "></hello-user>
+    <p>msg ={{helloMsg}}</p>
+
+    <h4 *ngFor="let message of messages ">
+        <p>{{ message.title }}</p>
+        <p>{{ message.message }}</p>
+    </h4>
+</div>

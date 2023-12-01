@@ -1,0 +1,36 @@
+import { Component, Input, OnInit } from '@angular/core';
+import { HelloUserComponent } from '../hello-user/hello-user.component';
+import {MOCK_MESSAGES} from './costanti';
+import { Message } from '../model/message';
+
+@Component({
+  selector: 'app-primo',
+  templateUrl: './primo.component.html',
+  styleUrls: ['./primo.component.css']
+})
+export class PrimoComponent implements OnInit {
+
+  flag=true;
+
+  modifyElement="c1";
+  helloMsg:string="";
+  messages: Message[];
+
+  constructor() {
+    this.messages = MOCK_MESSAGES;
+  }
+  ngOnInit(): void {
+  }
+
+  changeStatus(){
+
+    if(this.flag) { this.flag=false; this.modifyElement="c2";}
+    else { this.flag=true; this.modifyElement="c1"; }
+  }
+
+  //messaggio dalla funzione di output del figlio
+  msgReceive(newItem: string){
+      this.helloMsg=newItem;
+  }
+
+}
