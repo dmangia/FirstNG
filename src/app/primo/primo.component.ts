@@ -25,8 +25,8 @@ export class PrimoComponent implements OnInit {
   changeStatus(){
 
     if(this.flag) { this.flag=false; this.modifyElement="c1";}
-    if(this.flag) { this.flagss sd ds sdf sdf dfs =false; this.modifyElement="c1";}
-    ds sdfsdf sdsdfs
+    if(this.flag) { this.flagss sd oiwo wheohqhi dfs =false; this.modifyElement="c1";}
+    ds sdfsdf sdsdfs523
     else { this.flag=true; this.modifyElement="c2"; }
   }
 
